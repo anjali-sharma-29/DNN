@@ -100,6 +100,30 @@
     <Content Include="Edit.doctype.xml" />
     <Content Include="i\icon_message_active.png" />
     <Content Include="i\icon_notification_active.png" />
+    <Content Include="img\img\about-img.jpg" />
+    <Content Include="img\img\client-1.jpg" />
+    <Content Include="img\img\client-2.jpg" />
+    <Content Include="img\img\hero-bg.jpg" />
+    <Content Include="img\img\logo.png" />
+    <Content Include="img\img\portfolio-1.jpg" />
+    <Content Include="img\img\portfolio-2.jpg" />
+    <Content Include="img\img\portfolio-3.jpg" />
+    <Content Include="img\img\portfolio-4.jpg" />
+    <Content Include="img\img\portfolio-5.jpg" />
+    <Content Include="img\img\portfolio-6.jpg" />
+    <Content Include="img\img\portfolio-7.jpg" />
+    <Content Include="img\img\portfolio-8.jpg" />
+    <Content Include="img\img\preloader.svg" />
+    <Content Include="img\img\quote_sign_left.png" />
+    <Content Include="img\img\quote_sign_right.png" />
+    <Content Include="img\img\services-bg.jpg" />
+    <Content Include="img\img\subscribe-bg.jpg" />
+    <Content Include="img\img\team-1.jpg" />
+    <Content Include="img\img\team-2.jpg" />
+    <Content Include="img\img\team-3.jpg" />
+    <Content Include="img\img\team-4.jpg" />
+    <Content Include="js\Ijs\contactform.js" />
+    <Content Include="js\Ijs\custom.js" />
     <Content Include="lib\animate-css\animate.min.css" />
     <Content Include="lib\bootstrap\css\bootstrap-theme.css" />
     <Content Include="lib\bootstrap\css\bootstrap-theme.min.css" />
@@ -199,6 +223,8 @@
     <Content Include="packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" />
     <Content Include="packages\MSBuildTasks.1.5.0.235\MSBuildTasks.1.5.0.235.nupkg" />
     <Content Include="packages\MSBuildTasks.1.5.0.235\tools\MSBuild.Community.Tasks.Targets" />
+    <Content Include="img\img\Thumbs .db" />
+    <Content Include="i\Thumbs .db" />
     <None Include="packages\MSBuildTasks.1.5.0.235\tools\MSBuild.Community.Tasks.xsd">
       <SubType>Designer</SubType>
     </None>
