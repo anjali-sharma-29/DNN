@@ -14,7 +14,6 @@
 <dnn:META ID="mobileScale" runat="server" Name="viewport" Content="width=device-width,initial-scale=1" />
 
 <dnn:JQUERY ID="dnnjQuery" runat="server" jQueryHoverIntent="true" />
-<dnn:DnnJsInclude ID="bootstrapJS" runat="server" FilePath="js/bootstrap.min.js" PathNameAlias="SkinPath" Priority="10" />
 <dnn:DnnCssInclude ID="bootStrapCSS" runat="server" FilePath="lib/bootstrap/css/bootstrap.min.css" PathNameAlias="SkinPath" priority="14" />
 <dnn:DnnJsInclude ID="bluImpJS" runat="server" FilePath="js/jquery.blueimp-gallery.min.js" PathNameAlias="SkinPath" />
 <dnn:DnnCssInclude ID="Fontcss" runat="server" FilePath="lib/font-awesome/css/font-awesome.min.css" PathNameAlias="SkinPath" priority="16" />
@@ -22,8 +21,13 @@
 <dnn:DnnCssInclude Id="MainStyle" runat="server" FilePath="css/IStyle.css" PathNameAlias="SkinPath" priority="15" />
 
 
-<body>
-  <div id="preloader"></div>
+
+<div  runat="server"  containertype="G" containername="ImperialTheme" containersrc="Blank.ascx" />
+
+
+<div class="container">
+
+ <div id="preloader"></div>
 
   <!--==========================
   Hero Section
@@ -35,9 +39,13 @@
           <img class="" src="/img/logo.png" alt="Imperial">
         </div>
 
-        <h1>Welcome to Imperial studios</h1>
+          <div id="Content1" class="row">
+        <div id="Div1" runat="server" class="col-md-12" />
+    </div>
+    
+        <%--<h1>Welcome to Imperial studios</h1>
         <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
-        <div class="actions">
+        --%><div class="actions">
           <a href="#about" class="btn-get-started">Get Strated</a>
           <a href="#services" class="btn-services">Our Services</a>
         </div>
@@ -52,7 +60,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="/img/logo.png" alt="" title="" /></img></a>
+        <a href="#hero"><img src="/img/logo.png" alt="" title="" /></a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>
@@ -60,7 +68,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="#about">About Us</a></li>
+           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
@@ -93,35 +101,7 @@
   <!--==========================
   About Section
   ============================-->
-  <section id="about">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">About Us</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
-        </div>
-      </div>
-    </div>
-    <div class="container about-container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-6 col-md-push-6 about-content">
-          <h2 class="about-title">We provide great services and ideass</h2>
-          <p class="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate
-          </p>
-          <p class="about-text">
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-            id est laborum
-          </p>
-          <p class="about-text">
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-            id est laborum
-          </p>
-        </div>
-      </div>
-    </div>
+  <section id="about" runat="server">
   </section>
 
   <!--==========================
@@ -137,38 +117,27 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" >
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-desktop"></i></div>
-          <h4 class="service-title"><a href="">Lorem Ipsum</a></h4>
-          <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-        </div>
+          <div id="serviceitem1" runat="server"></div>
+          </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-          <h4 class="service-title"><a href="">Dolor Sitema</a></h4>
-          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-        </div>
+          <div  id="serviceitem3" runat="server"></div></div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
-          <h4 class="service-title"><a href="">Sed ut perspiciatis</a></h4>
-          <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          <div  id="serviceitem4" runat="server"> </div> </div>
+        <div class="col-md-4 service-item">
+          <div id="serviceitem5" runat="server"></div>     
+
         </div>
         <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-photo"></i></div>
-          <h4 class="service-title"><a href="">Magni Dolores</a></h4>
-          <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+           <div id="serviceitem6" runat="server"></div>
         </div>
         <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-road"></i></div>
-          <h4 class="service-title"><a href="">Nemo Enim</a></h4>
-          <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-        </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
-          <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
-          <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-        </div>
-      </div>
+        <div id="serviceitem2" runat="server"></div>
+          </div>
     </div>
   </section>
 
@@ -176,17 +145,7 @@
   Subscrbe Section
   ============================-->
   <section id="subscribe">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-8">
-          <h3 class="subscribe-title">Subscribe For Updates</h3>
-          <p class="subscribe-text">Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
-        </div>
-        <div class="col-md-4 subscribe-btn-container">
-          <a class="subscribe-btn" href="#">Subscribe Now</a>
-        </div>
-      </div>
-    </div>
+      <div id="subscribersection" runat="server"></div>  
   </section>
 
   <!--==========================
@@ -328,76 +287,9 @@
   <!--==========================
   Team Section
   ============================-->
-  <section id="team">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Our Team</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
-      </div>
+<div id="teamSection" runat="server">
 
-      <div class="row">
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="/img/team-1.jpg" alt=""></div>
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="/img/team-2.jpg" alt=""></div>
-            <h4>Sarah Jhinson</h4>
-            <span>Product Manager</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="/img/team-3.jpg" alt=""></div>
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="/img/team-4.jpg" alt=""></div>
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
+</div>
 
   <!--==========================
   Contact Section
@@ -492,8 +384,6 @@
 
 
   <!-- Required JavaScript Libraries -->
-    <dnn:DnnJsInclude ID="jqueryjs" runat="server" FilePath="lib/jquery/jquery.min.js" PathNameAlias="SkinPath" />
-  <script src="lib/jquery/jquery.min.js"></script>
     <dnn:DnnJsInclude ID="DnnJsInclude1" runat="server" FilePath="lib/bootstrap/js/bootstrap.min.js" PathNameAlias="SkinPath" />
     <dnn:DnnJsInclude ID="DnnJsInclude2" runat="server" FilePath="lib/superfish/hoverIntent.js" PathNameAlias="SkinPath" />
     <dnn:DnnJsInclude ID="DnnJsInclude3" runat="server" FilePath="lib/superfish/superfish.min.js" PathNameAlias="SkinPath" />
@@ -549,10 +439,6 @@
     </div>
 </div>
 
-<div id="CarouselPane" runat="server" class="carousel slide" containertype="G" containername="ImperialTheme" containersrc="Blank.ascx" />
-
-
-<div class="container">
     <!--/Logo-->
 
     <div id="TopContent" class="row">
@@ -592,16 +478,5 @@
             </div>
         </div>
     </div>
-</div>
-
-<!-- gallery and carousel controls, hidden by default -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
 </div>
 
